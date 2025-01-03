@@ -2,7 +2,8 @@ import { use, Suspense } from 'react';
 
 const fetchData = async () => {
   const res = await fetch('https://api.chucknorris.io/jokes/random');
-  return res.json();
+  
+  return res.json(); // You should not include await because use will take care of that
 };
 
 const JokeItem = () => {
