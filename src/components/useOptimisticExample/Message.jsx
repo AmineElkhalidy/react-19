@@ -55,7 +55,7 @@ const Thread = ({ messages, sendMessage }) => {
         <div key={index} className='flex items-center'>
           <span>{message.text}</span>
           {message.sending && (
-            <small className='ml-1 text-gray-500'>(Sending...)</small>
+            <small className='ml-1 text-gray-500'>(Message is being send...)</small>
           )}
         </div>
       ))}
